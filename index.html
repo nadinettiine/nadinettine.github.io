@@ -2,29 +2,70 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Stock Portfolio Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Dashboard</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; max-width: 800px; margin: auto; padding: 20px; background-color: #f4f4f9; }
-        .card { background: white; padding: 20px; margin-bottom: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        h1 { color: #333; text-align: center; }
-        img { width: 100%; height: auto; border-radius: 4px; }
-        .description { color: #666; font-size: 0.9em; margin-top: 10px; }
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; display: flex; background-color: #f0f2f5; }
+        /* Sidebar styling */
+        .sidebar { width: 250px; height: 100vh; background: #1a237e; color: white; padding: 20px; position: fixed; }
+        /* Main content styling */
+        .main-content { margin-left: 290px; padding: 40px; width: 100%; max-width: 1000px; }
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        .card { background: white; padding: 15px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        h1 { color: #1a237e; margin-top: 0; }
+        h2 { font-size: 1.1em; color: #333; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        img { width: 100%; height: auto; border-radius: 5px; margin-top: 10px; }
+        .footer { margin-top: 30px; font-size: 0.8em; color: #666; text-align: center; }
     </style>
 </head>
 <body>
 
-    <h1>Portfolio Sector Analysis</h1>
-
-    <div class="card">
-        <h2>Sector Performance (Last 12 Months)</h2>
-        <img src="ddd.png" alt="Excel Sector Chart">
-        <p class="description">This chart shows the cumulative growth of each sector based on daily closing prices.</p>
+    <div class="sidebar">
+        <h2>Market Analysis</h2>
+        <p>This dashboard tracks annual sector performance and portfolio risk metrics.</p>
+        <hr>
+        <p><strong>Status:</strong> Live</p>
     </div>
 
-    <div class="card">
-        <h2>Risk vs. Reward</h2>
-        <img src="ddd.png" alt="Excel Risk Chart">
-        <p class="description">Comparing volatility against total return for the diversified portfolio.</p>
+    <div class="main-content">
+        <h1>Executive Portfolio Overview</h1>
+
+        <div class="grid">
+            <div class="card">
+                <h2>Sector Cumulative Returns</h2>
+                <img src="chart1.png" alt="Sector Returns">
+            </div>
+
+            <div class="card">
+                <h2>Risk vs. Volatility</h2>
+                <img src="chart2.png" alt="Risk Analysis">
+            </div>
+
+            <div class="card">
+                <h2>Monthly Winners & Losers</h2>
+                <img src="chart3.png" alt="Monthly Performance">
+            </div>
+
+            <div class="card">
+                <h2>Portfolio Weighting</h2>
+                <img src="chart4.png" alt="Portfolio Weights">
+            </div>
+            
+              <div class="grid">
+            <div class="card">
+                <h2>Sector Cumulative Returns</h2>
+                <img src="chart5.png" alt="Sector Returns">
+            </div>
+                 <div class="grid">
+            <div class="card">
+                <h2>Sector Cumulative Returns</h2>
+                <img src="chart6.png" alt="Sector Returns">
+            </div>
+        </div>
+
+        <div class="footer">
+            Generated from Excel Dataset | Updated January 2026
+        </div>
     </div>
 
 </body>
